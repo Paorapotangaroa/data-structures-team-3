@@ -34,5 +34,6 @@ def createOutput(custTotals):
         # convert burger count to string and concat that value
         # add a line break for readabililty
         output += i[0].ljust(19) + "\t" + str(i[1])+"\n"
+        
     # return the output
     return output
