@@ -15,6 +15,3 @@ def createOutput(custTotals):
     
     return output
     
-# take each item from the dictionary and add it to a list sorted on values in descending order
-output = createOutput(custTotals)
-print(output)
