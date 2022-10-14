@@ -13,10 +13,9 @@ for x in range(100):
  
     customerQueue.append(customer)
  
-for x in range(len(customerQueue)) :
-    customerDictionary[customer] = x
-    customerQueue.pop(0)
+for x in range(0, len(customerQueue)) :
+    cust = customerQueue.pop(0)
+    customerDictionary[cust.customer_name] = cust.order.burger_count
+   
  
-listSortedCustomers = sorted(customerDictionary.items(), key=lambda x: x[1], reverse=True) 
-for x in range(len(customerDictionary), 1) :
-    print(listSortedCustomers(0,1))
+
